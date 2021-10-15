@@ -18,9 +18,9 @@ public class MovieDiscount {
             System.out.println("How many tickets do you wish to buy?");
             int number = input.nextInt();
             if (number >= 2) {
-                double price = 7 * 0.7;
+                double price = 7 * 0.7 * number;
                 System.out.println(price);
-        } else System.out.println(7);
+        } else System.out.println(7 * number);
 
         }
     }
