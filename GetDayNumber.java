@@ -6,7 +6,7 @@ public class GetDayNumber {
         Scanner input = new Scanner(System.in);
         System.out.println("What is the year day number (choose between 0 and 365?)");
         int yearDayNumber = input.nextInt();
-        if (yearDayNumber >= 0 && yearDayNumber <= 365) {
+        if (yearDayNumber >= 0 && yearDayNumber < 365) {
             int day = yearDayNumber % 7;
             switch (day) {
                 case 0:

@@ -7,15 +7,15 @@ public class GetBizhrs {
         System.out.println("What day is it?");
         String day = input.nextLine();
         if (day.equalsIgnoreCase("Saturday")) {
-            System.out.println("Not business day");
+            System.out.println("Not a business day");
         }
         if (day.equalsIgnoreCase("Sunday")) {
-            System.out.println("Not business day");
+            System.out.println("Not a business day");
         } else {
-            System.out.println("What time (in 24hr clock)?");
+            System.out.println("What time is it(choose between 0 to 24)?");
         }
         int time = input.nextInt();
-        if (time >= 900 && time <= 1800) {
+        if (time >= 9 && time <= 18) {
             System.out.println("Yes it is business day and hours");
         } else System.out.println("Not business hour");
     }
